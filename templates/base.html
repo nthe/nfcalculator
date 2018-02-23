@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+{#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">#}
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{% static 'nfc/css/main.css' %}">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
+    <!--
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    -->
+    <title></title>
+</head>
+<body>
+
+    <nav class="navbar mynav" role="mavigation" id="navbar">
+        <div class="container">
+            <!-- Here comes the logo of our application -->
+            <a class="navbar-brand mynav" href="{% url 'home' %}">
+                NFCalculator
+            </a>
+
+            <ul class="nav navbar-nav navbar-right">
+                {% if user.is_authenticated %}
+{#                    <li><a href="{% url 'nfcalculator:generate_table' %}">Get to work</a></li>#}
+{#                    <li><a href="{% url 'nfcalculator:select_process' %}">Processed Docs</a></li>#}
+{#                    <li><a href="{% url 'nfcalculator:list_document' %}">Upload Docs</a></li>#}
+{#                    <li><a href="{% url 'nfcalculator:logout' %}">Logout</a></li>#}
+                    <li><a href="#">Logged as: {{ request.user.username }}</a></li>
+
+                {% else %}
+{#                    <li><a href="{% url 'nfcalculator:login' %}">Log In</a></li>#}
+{#                    <li><a href="{% url 'nfcalculator:signup' %}">Sign Up</a></li>#}
+
+                {% endif %}
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- I will place individual content for particular pages-->
+    <div class="container mycontent">
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+
+
+
+</body>
+
+<!-- this javascript might be woking in the future :) -->
+<script type="text/javascript" src="{% static 'nfc/js/main.js' %}"></script>
+
+</html>
