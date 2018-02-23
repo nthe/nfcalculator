@@ -2,7 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a44e4323-9357-47af-bc6a-145744d69aa0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nfcalculator/files/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nfc.iml" afterPath="$PROJECT_DIR$/.idea/nfc.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfc/__init__.py" afterPath="$PROJECT_DIR$/nfc/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfc/settings.py" afterPath="$PROJECT_DIR$/nfc/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfc/urls.py" afterPath="$PROJECT_DIR$/nfc/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfc/views.py" afterPath="$PROJECT_DIR$/nfc/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfc/wsgi.py" afterPath="$PROJECT_DIR$/nfc/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfcalculator/__init__.py" afterPath="$PROJECT_DIR$/nfcalculator/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfcalculator/admin.py" afterPath="$PROJECT_DIR$/nfcalculator/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfcalculator/apps.py" afterPath="$PROJECT_DIR$/nfcalculator/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfcalculator/files/models.py" afterPath="$PROJECT_DIR$/nfcalculator/files/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfcalculator/migrations/__init__.py" afterPath="$PROJECT_DIR$/nfcalculator/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfcalculator/models.py" afterPath="$PROJECT_DIR$/nfcalculator/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfcalculator/tests.py" afterPath="$PROJECT_DIR$/nfcalculator/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfcalculator/urls.py" afterPath="$PROJECT_DIR$/nfcalculator/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nfcalculator/views.py" afterPath="$PROJECT_DIR$/nfcalculator/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/nfcalculator/css/main.css" afterPath="$PROJECT_DIR$/static/nfcalculator/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/nfcalculator/js/main.js" afterPath="$PROJECT_DIR$/static/nfcalculator/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/test.html" afterPath="$PROJECT_DIR$/templates/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/thanks.html" afterPath="$PROJECT_DIR$/templates/thanks.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,53 +39,82 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/nfc$populate.coverage" NAME="populate Coverage Results" MODIFIED="1519415450507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/populate" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.sqlite3" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.sqlite3" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nfc/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="148" column="30" lean-forward="false" selection-start-line="148" selection-start-column="30" selection-end-line="148" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/nfcalculator/js/main.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/nfcalculator/css/main.css">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nfcalculator/files/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="104">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nfc/urls.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nfcalculator/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+            <state relative-caret-position="14">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <element signature="e#637#678#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/test.html">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ba07c63f-5808-44ea-920e-73746538f6b8/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -66,9 +123,90 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thanks.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/thanks.html">
+      <file leaf-file-name="DATABASE/ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen" pinned="false" current-in-tab="false">
+        <entry file="uml://DATABASE/ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen</OriginalElement>
+              <nodes>
+                <node x="842.303539787624" y="-63.58302647365572">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain</node>
+                <node x="18.202286731303303" y="10.106496054944628">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient</node>
+                <node x="430.94205229140607" y="450.9888882964266">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_nutritionfact</node>
+                <node x="440.97658722097424" y="124.62703204374316">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient</node>
+                <node x="1208.664335577814" y="154.87754978595413">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_extra</node>
+                <node x="19.329792937721777" y="301.078225054783">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact</node>
+                <node x="861.279582594314" y="395.92486735567275">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens</node>
+                <node x="457.1175242053037" y="-101.40193148628418">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_product</node>
+                <node x="1201.7182484802327" y="306.01357411322863">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_product">
+                  <point x="0.0" y="-59.0" />
+                  <point x="0.0" y="37.0" />
+                </edge>
+                <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_nutritionfact">
+                  <point x="110.0" y="0.0" />
+                  <point x="-83.0" y="0.0" />
+                </edge>
+                <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+                  <point x="-113.5" y="0.0" />
+                  <point x="77.0" y="0.0" />
+                </edge>
+                <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen">
+                  <point x="103.0" y="0.0" />
+                  <point x="-71.0" y="0.0" />
+                </edge>
+                <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+                  <point x="98.0" y="0.0" />
+                  <point x="-77.0" y="0.0" />
+                </edge>
+                <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_extra">
+                  <point x="0.0" y="48.0" />
+                  <point x="0.0" y="-37.0" />
+                </edge>
+                <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+                  <point x="0.0" y="-48.0" />
+                  <point x="0.0" y="48.0" />
+                </edge>
+                <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+                  <point x="0.0" y="59.0" />
+                  <point x="0.0" y="-48.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.1497382198952881" x="170.74316939890707" y="83.868057542846" />
+              <SelectedNodes>
+                <node>ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Key columns</Category>
+                <Category>Columns</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="populate.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/populate/populate.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.nfcalculator_nutritionfact" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_nutritionfact">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
@@ -76,29 +214,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
+      <file leaf-file-name="main.nfcalculator_ingredientnutritionfact" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredientnutritionfact">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-              <folding />
+      <file leaf-file-name="main.nfcalculator_ingredient" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nfcalculator/files/models.py">
-          <provider selected="true" editor-type-id="text-editor">
+          <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
@@ -109,8 +247,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nfc/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="52">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,6 +280,8 @@
         <option value="$PROJECT_DIR$/nfc/urls.py" />
         <option value="$PROJECT_DIR$/nfc/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/nfcalculator/models.py" />
+        <option value="$PROJECT_DIR$/populate/populate.py" />
       </list>
     </option>
   </component>
@@ -152,10 +292,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2012" />
-    <option name="y" value="48" />
-    <option name="width" value="1666" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -173,6 +313,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -209,20 +350,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="populate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nfc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nfc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="nfcalculator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Continuum/Anaconda2/python.exe" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -244,7 +399,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.nfc">
+  <component name="RunManager" selected="Python.populate">
+    <configuration default="false" name="populate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/populate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nfc" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/populate/populate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -365,6 +539,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -433,9 +613,15 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Django server.nfc" />
+      <item index="1" class="java.lang.String" itemvalue="Python.populate" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.populate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -451,27 +637,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2012" y="48" width="1666" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24968867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18656716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25746268" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39502165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21536796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -486,25 +672,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nfcalculator/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nfc/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="2812">
           <caret line="148" column="30" lean-forward="false" selection-start-line="148" selection-start-column="30" selection-end-line="148" selection-end-column="30" />
           <folding />
         </state>
@@ -528,11 +698,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nfc/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="342">
           <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
           <folding>
-            <element signature="e#637#678#0" expanded="true" />
+            <element signature="e#637#678#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -541,6 +743,63 @@
         <state relative-caret-position="38">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfcalculator/files/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfcalculator/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfc/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="148" column="30" lean-forward="false" selection-start-line="148" selection-start-column="30" selection-end-line="148" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/nfcalculator/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/nfcalculator/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfc/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <element signature="e#637#678#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -562,17 +821,193 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nfcalculator/files/models.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/ba07c63f-5808-44ea-920e-73746538f6b8">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>ba07c63f-5808-44ea-920e-73746538f6b8</OriginalElement>
+          <nodes>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_nutritionfact</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.auth_permission</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.django_session</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.auth_user_groups</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.django_migrations</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_product</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.django_content_type</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.django_admin_log</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.auth_user_user_permissions</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.sqlite_master</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_extra</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.auth_user</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.auth_group</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.sqlite_sequence</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen</node>
+            <node x="" y="">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.auth_group_permissions</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.48214285714285715" x="581.0" y="578.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ba07c63f-5808-44ea-920e-73746538f6b8/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfc/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen</OriginalElement>
+          <nodes>
+            <node x="842.303539787624" y="-63.58302647365572">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain</node>
+            <node x="18.202286731303303" y="10.106496054944628">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient</node>
+            <node x="430.94205229140607" y="450.9888882964266">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_nutritionfact</node>
+            <node x="440.97658722097424" y="124.62703204374316">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient</node>
+            <node x="1208.664335577814" y="154.87754978595413">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_extra</node>
+            <node x="19.329792937721777" y="301.078225054783">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact</node>
+            <node x="861.279582594314" y="395.92486735567275">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens</node>
+            <node x="457.1175242053037" y="-101.40193148628418">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_product</node>
+            <node x="1201.7182484802327" y="306.01357411322863">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_product">
+              <point x="0.0" y="-59.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_nutritionfact">
+              <point x="110.0" y="0.0" />
+              <point x="-83.0" y="0.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+              <point x="-113.5" y="0.0" />
+              <point x="77.0" y="0.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen">
+              <point x="103.0" y="0.0" />
+              <point x="-71.0" y="0.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+              <point x="98.0" y="0.0" />
+              <point x="-77.0" y="0.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_extra">
+              <point x="0.0" y="48.0" />
+              <point x="0.0" y="-37.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+              <point x="0.0" y="-48.0" />
+              <point x="0.0" y="48.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+              <point x="0.0" y="59.0" />
+              <point x="0.0" y="-48.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.1497382198952881" x="170.74316939890707" y="83.868057542846" />
+          <SelectedNodes>
+            <node>ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_nutritionfact">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredientnutritionfact">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfcalculator/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate/populate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
