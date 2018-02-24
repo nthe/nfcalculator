@@ -5,7 +5,8 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "nfc.settings")
 django.setup()
 from nfcalculator.models import (Ingredient,
                                  IngredientNutritionFact,
-                                 Allergen)
+                                 Allergen
+                                 )
 
 
 def load_products_from_file(file_name=None, sheet_name=None):
@@ -70,6 +71,7 @@ def add_to_allergen(_allergen_list):
 def add_to_ingredientnutritionfact(_ingredient_id,
                                    _nutrition_fact_id,
                                    _weight):
+
     """
 
     :param ingredient_id:        for example butter - Liptov with      #5
@@ -100,26 +102,37 @@ allergen = set([x.strip() for x in allergen.split(',') if x != 'nan'])
 
 Allergens:
 ----------
-oxid siričitý (v koncentrácii vyšších než 10 mg/kg)
-raž
-orechy
-arašidy
-horčica
-mlieko
-srvátka
-cmar
-sezam
-lepok
-pšenica
-vajce
-zeler
-špalda
-jačmeň
-ovos
-horčicové semeno
-strúhanka
+1	oxid siričitý (v koncentrácii vyšších než 10 mg/kg)
+2	raž
+3	orechy
+4	arašidy
+5	horčica
+6	mlieko
+7	srvátka
+8	cmar
+9	sezam
+10	lepok
+11	pšenica
+12	vajce
+13	zeler
+14	špalda
+15	jačmeň
+16	ovos
+17	horčicové semeno
+18	strúhanka
+
+table: nutritionfact
+--------------------
+1	Lipids
+2	Saturated
+3	Sacharides
+4	Sugar
+5	Protein
+6	Salt
 
 
+Excel sheet data:
+-----------------
 'Názov produktu'
 'Výrobca/Distribútor'
 'Zloženie'
@@ -132,13 +145,6 @@ strúhanka
 'Bielkoviny'
 'Soľ'
 
-table: nutritionfact
-1	Lipids
-2	Saturated
-3	Sacharides
-4	Sugar
-5	Protein
-6	Salt
 
 '''
 
@@ -164,4 +170,19 @@ for index, row in df.head(10).iterrows():
 
 
 
+"""
+>>> from blog.models import Blog, Entry
+>>> entry = Entry.objects.get(pk=1)
+>>> cheese_blog = Blog.objects.get(name="Cheddar Talk")
+>>> entry.blog = cheese_blog
+>>> entry.save()
+"""
 
+# Allergen.objects.get(name="orechy").id
+# main.nfcalculator_ingredient_allergens
+#
+#
+# from django.db.models import get_app, get_models
+# app = get_app(app_name)
+# for model in get_models(app, include_auto_created=True):
+#     print model._meta.db_table
