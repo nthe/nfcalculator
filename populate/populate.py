@@ -3,7 +3,9 @@ import django
 import pandas as pd
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "nfc.settings")
 django.setup()
-from nfcalculator.models import Ingredient, IngredientNutritionFact
+from nfcalculator.models import (Ingredient,
+                                 IngredientNutritionFact,
+                                 Allergen)
 
 
 def load_products_from_file(file_name=None, sheet_name=None):
@@ -35,6 +37,36 @@ def add_to_ingredient(_name, _description):
     return ingredient
 
 
+def add_to_allergen(_allergen_list):
+    """
+    This function is supposed to be run just once
+    so I will call this function by hand in ypython
+    in the following fashion:
+
+    file = "data.xlsx"
+    sheet = "ingredient"
+    cwd = os.getcwd()
+    df = load_products_from_file(file, sheet)
+    column_names = df.columns.values.tolist()
+
+    df = pd.DataFrame(df)
+    allergen = [",".join([str(i) for i in [row['Alergény'] for index, row in df.iterrows()]])][0]
+    allergen = set([x.strip() for x in allergen.split(',') if x != 'nan'])
+
+    add_to_allergen(allergen)
+
+    :param _name:
+    :return:
+    """
+
+    for i in list(_allergen_list):
+        allergen = Allergen.objects.get_or_create(
+            name=i
+        )[0]
+        allergen.save()
+    return allergen
+
+
 def add_to_ingredientnutritionfact(_ingredient_id,
                                    _nutrition_fact_id,
                                    _weight):
@@ -61,8 +93,32 @@ df = load_products_from_file(file, sheet)
 column_names = df.columns.values.tolist()
 
 df = pd.DataFrame(df)
+allergen = [",".join([str(i) for i in [row['Alergény'] for index, row in df.iterrows()]])][0]
+allergen = set([x.strip() for x in allergen.split(',') if x != 'nan'])
 
 '''
+
+Allergens:
+----------
+oxid siričitý (v koncentrácii vyšších než 10 mg/kg)
+raž
+orechy
+arašidy
+horčica
+mlieko
+srvátka
+cmar
+sezam
+lepok
+pšenica
+vajce
+zeler
+špalda
+jačmeň
+ovos
+horčicové semeno
+strúhanka
+
 
 'Názov produktu'
 'Výrobca/Distribútor'
@@ -86,7 +142,6 @@ table: nutritionfact
 
 '''
 
-imported_ingredients = {}
 for index, row in df.head(10).iterrows():
     # inserting to table: Ingredient
     ingredient_object = add_to_ingredient(row['Názov produktu'], row['Zloženie'])
@@ -108,7 +163,5 @@ for index, row in df.head(10).iterrows():
         )
 
 
-data = [",".join([str(i) for i in [row['Alergény'] for index, row in df.iterrows() ]])][0]
-[x for x in data.split(',') if x]
-set([x.strip() for x in data.split(',') if x != 'nan'])
+
 
