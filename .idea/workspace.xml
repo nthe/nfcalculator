@@ -6,6 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata.keystream" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata.keystream.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata_i" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/_metadata_/metadata_i.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database_structure.jpg" afterPath="$PROJECT_DIR$/database_structure.jpg" />
@@ -14,9 +15,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/populate/db.sqlite" afterPath="$PROJECT_DIR$/populate/db.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/populate/db.sqlite3" afterPath="$PROJECT_DIR$/populate/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/populate/tutorial.db" afterPath="$PROJECT_DIR$/populate/tutorial.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/populate/~$data.xlsx" afterPath="$PROJECT_DIR$/populate/~$data.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/storage.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8/storage.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
@@ -100,7 +103,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nfc/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3666">
+            <state relative-caret-position="133">
               <caret line="141" column="12" lean-forward="false" selection-start-line="141" selection-start-column="12" selection-end-line="141" selection-end-column="12" />
               <folding />
             </state>
@@ -194,8 +197,8 @@
       <file leaf-file-name="populate.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/populate/populate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+            <state relative-caret-position="523">
+              <caret line="111" column="33" lean-forward="true" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -664,7 +667,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15458423" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3690476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23376623" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2651515" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21536796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -744,7 +747,7 @@
         <state relative-caret-position="650">
           <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="62" />
           <folding>
-            <element signature="e#257#273#0" expanded="true" />
+            <element signature="e#257#273#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -981,14 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nfc/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3666">
-          <caret line="141" column="12" lean-forward="false" selection-start-line="141" selection-start-column="12" selection-end-line="141" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nfc/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -1002,7 +997,7 @@
         <state relative-caret-position="73">
           <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="62" />
           <folding>
-            <element signature="e#257#273#0" expanded="true" />
+            <element signature="e#257#273#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1020,30 +1015,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nfcalculator/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_nutritionfact">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1124,10 +1096,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfcalculator/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfc/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="141" column="12" lean-forward="false" selection-start-line="141" selection-start-column="12" selection-end-line="141" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/populate/populate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="523">
+          <caret line="111" column="33" lean-forward="true" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

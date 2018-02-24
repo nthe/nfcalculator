@@ -108,9 +108,7 @@ for index, row in df.head(10).iterrows():
         )
 
 
-
-
-
-
-
+data = [",".join([str(i) for i in [row['Alergény'] for index, row in df.iterrows() ]])][0]
+[x for x in data.split(',') if x]
+set([x.strip() for x in data.split(',') if x != 'nan'])
 
