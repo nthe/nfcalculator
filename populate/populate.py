@@ -23,16 +23,32 @@ def load_products_from_file(file_name=None, sheet_name=None):
     return data_frame
 
 
-def add_to_ingredient(_name, _description):
+def add_to_ingredient(_name, _description, _allergen, _allergen_list):
     """
+    <database models.py>
+    ...
+    class Ingredient(models.Model):
+        name = models.CharField(max_length=255, null=False, blank=False)
+        description = models.TextField(null=True, blank=False)
+        allergens = models.ManyToManyField(Allergen)
+        may_contain = models.ManyToManyField(Extra)
+    ...
+    </database models.py>
 
     :param _name:
     :param _description:
-    :return: returns what has been added to sqlite database
+    :param _allergen:      this is actual "excel cell" from column 'Alergény' when iterating
+                           through particular excel rows (pandas data_frame respectively)
+
+    :param _allergen_list: this variable is of type "set" and allergens present in
+                           within this set are loaded from excel file (filed: 'Alergény')
+    :return:
     """
+    _allergen_list = None
     ingredient = Ingredient.objects.get_or_create(
         name=_name,
-        description=_description
+        description=_description,
+        allergens=_allergen
     )[0]
     ingredient.save()
     return ingredient
@@ -44,6 +60,7 @@ def add_to_allergen(_allergen_list):
     so I will call this function by hand in ypython
     in the following fashion:
 
+    <code>
     file = "data.xlsx"
     sheet = "ingredient"
     cwd = os.getcwd()
@@ -52,9 +69,10 @@ def add_to_allergen(_allergen_list):
 
     df = pd.DataFrame(df)
     allergen = [",".join([str(i) for i in [row['Alergény'] for index, row in df.iterrows()]])][0]
-    allergen = set([x.strip() for x in allergen.split(',') if x != 'nan'])
+    allergen_list = set([x.strip() for x in allergen.split(',') if x != 'nan'])
 
-    add_to_allergen(allergen)
+    add_to_allergen(allergen_list)
+    </code>
 
     :param _name:
     :return:
@@ -96,7 +114,7 @@ column_names = df.columns.values.tolist()
 
 df = pd.DataFrame(df)
 allergen = [",".join([str(i) for i in [row['Alergény'] for index, row in df.iterrows()]])][0]
-allergen = set([x.strip() for x in allergen.split(',') if x != 'nan'])
+allergen_list = set([x.strip() for x in allergen.split(',') if x != 'nan'])
 
 '''
 
@@ -186,3 +204,20 @@ for index, row in df.head(10).iterrows():
 # app = get_app(app_name)
 # for model in get_models(app, include_auto_created=True):
 #     print model._meta.db_table
+
+
+
+
+add_to_ingredient("maslo_liptov", "some desc", "mlieko", "nevsimaj si ")
+add_to_ingredient("maslo_liptov", "some desc", "orechy", "nevsimaj si ")
+add_to_ingredient("maslo_liptov", "some desc", "servatka", "nevsimaj si ")
+
+
+
+
+
+
+
+
+
+
