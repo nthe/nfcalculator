@@ -5,7 +5,8 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "nfc.settings")
 django.setup()
 from nfcalculator.models import (Ingredient,
                                  IngredientNutritionFact,
-                                 Allergen
+                                 Allergen,
+                                 Extra
                                  )
 
 
@@ -23,7 +24,7 @@ def load_products_from_file(file_name=None, sheet_name=None):
     return data_frame
 
 
-def add_to_ingredient(_name, _description, _allergen, _allergen_list):
+def add_to_ingredient(_name, _description, _allergen, _may_contain):
     """
     <database models.py>
     ...
@@ -40,16 +41,50 @@ def add_to_ingredient(_name, _description, _allergen, _allergen_list):
     :param _allergen:      this is actual "excel cell" from column 'Alergény' when iterating
                            through particular excel rows (pandas data_frame respectively)
 
-    :param _allergen_list: this variable is of type "set" and allergens present in
-                           within this set are loaded from excel file (filed: 'Alergény')
     :return:
+
     """
-    _allergen_list = None
+
+    allergen_set_object = set(str(_allergen).split(','))
+    allergen_set_object = set([i.strip() for i in allergen_set_object])
+
+    may_contain_set_object = set(str(_may_contain).split(','))
+    may_contain_set_object = set([i.strip() for i in may_contain_set_object])
+
+    print("allergen_set_object: {}".format(allergen_set_object))
+
+    '''
+    Example: allergen_set_object
+    ----------------------------
+    ...
+    {'mlieko'}
+    {'vajce'}
+    {'pšenica'}
+    {'nan'}
+    {'jačmeň', 'pšenica', 'vajce', 'horčica'}
+    ...
+    '''
     ingredient = Ingredient.objects.get_or_create(
         name=_name,
-        description=_description,
-        allergens=_allergen
+        description=_description
     )[0]
+
+    # Allergens section
+    for i in allergen_set_object:
+        try:
+            record = Allergen.objects.get(name=i).id
+            ingredient.allergens.add(record)
+        except Exception as ale:
+            print("allergen Error: {}".format(ale))
+
+    # May contain extra section
+    for i in may_contain_set_object:
+        try:
+            record = Extra.objects.get(name=i).id
+            ingredient.may_contain.add(record)
+        except Exception as mc:
+            print("may_contain Error: {}".format(mc))
+
     ingredient.save()
     return ingredient
 
@@ -86,6 +121,38 @@ def add_to_allergen(_allergen_list):
     return allergen
 
 
+def add_to_extra(_extra_list):
+    """
+    This function is supposed to be run just once
+    so I will call this function by hand in ypython
+    in the following fashion:
+
+    <code>
+    file = "data.xlsx"
+    sheet = "ingredient"
+    cwd = os.getcwd()
+    df = load_products_from_file(file, sheet)
+    column_names = df.columns.values.tolist()
+
+    df = pd.DataFrame(df)
+    extra = [",".join([str(i) for i in [row['Môže obsahovať'] for index, row in df.iterrows()]])][0]
+    extra_list = set([x.strip() for x in extra.split(',') if x != 'nan'])
+
+    add_to_extra(extra_list)
+    </code>
+
+    :param _name:
+    :return:
+    """
+
+    for i in list(_extra_list):
+        extra = Extra.objects.get_or_create(
+            name=i
+        )[0]
+        extra.save()
+    return extra
+
+
 def add_to_ingredientnutritionfact(_ingredient_id,
                                    _nutrition_fact_id,
                                    _weight):
@@ -116,9 +183,14 @@ df = pd.DataFrame(df)
 allergen = [",".join([str(i) for i in [row['Alergény'] for index, row in df.iterrows()]])][0]
 allergen_list = set([x.strip() for x in allergen.split(',') if x != 'nan'])
 
+
+extra = [",".join([str(i) for i in [row['Môže obsahovať'] for index, row in df.iterrows()]])][0]
+extra_list = set([x.strip() for x in extra.split(',') if x != 'nan'])
+
+
 '''
 
-Allergens:
+table: Allergens:
 ----------
 1	oxid siričitý (v koncentrácii vyšších než 10 mg/kg)
 2	raž
@@ -138,6 +210,22 @@ Allergens:
 16	ovos
 17	horčicové semeno
 18	strúhanka
+
+table: Extra
+------------
+1	siričitany
+2	sójové bôby
+3	sezam
+4	vajce
+5	horčica
+6	mlieko
+7	sôja
+8	arašidy
+9	glutén
+10	orechy
+11	sezamové semeno
+12	zeler
+
 
 table: nutritionfact
 --------------------
@@ -168,7 +256,10 @@ Excel sheet data:
 
 for index, row in df.head(10).iterrows():
     # inserting to table: Ingredient
-    ingredient_object = add_to_ingredient(row['Názov produktu'], row['Zloženie'])
+    ingredient_object = add_to_ingredient(row['Názov produktu'],
+                                          row['Zloženie'],
+                                          row['Alergény'],
+                                          row['Môže obsahovať'])
 
     Lipids = row['Tuky']
     Saturated = row['Z toho nasýtené mastné kyseliny']
@@ -186,31 +277,6 @@ for index, row in df.head(10).iterrows():
             _weight=float(str(j).replace(',', '.'))
         )
 
-
-
-"""
->>> from blog.models import Blog, Entry
->>> entry = Entry.objects.get(pk=1)
->>> cheese_blog = Blog.objects.get(name="Cheddar Talk")
->>> entry.blog = cheese_blog
->>> entry.save()
-"""
-
-# Allergen.objects.get(name="orechy").id
-# main.nfcalculator_ingredient_allergens
-#
-#
-# from django.db.models import get_app, get_models
-# app = get_app(app_name)
-# for model in get_models(app, include_auto_created=True):
-#     print model._meta.db_table
-
-
-
-
-add_to_ingredient("maslo_liptov", "some desc", "mlieko", "nevsimaj si ")
-add_to_ingredient("maslo_liptov", "some desc", "orechy", "nevsimaj si ")
-add_to_ingredient("maslo_liptov", "some desc", "servatka", "nevsimaj si ")
 
 
 
