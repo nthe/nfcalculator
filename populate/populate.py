@@ -254,8 +254,9 @@ Excel sheet data:
 
 '''
 
-for index, row in df.head(10).iterrows():
+for index, row in df.iterrows():
     # inserting to table: Ingredient
+    print('processing: {}'.format(row['Názov produktu']))
     ingredient_object = add_to_ingredient(row['Názov produktu'],
                                           row['Zloženie'],
                                           row['Alergény'],
