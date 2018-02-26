@@ -14,11 +14,16 @@ class Extra(models.Model):
     name = models.CharField(max_length=256, null=False, blank=False)
 
 
+class Producer(models.Model):
+    name = models.CharField(max_length=256, null=False, blank=False)
+
+
 class Ingredient(models.Model):
     name = models.CharField(max_length=255, null=False, blank=False)
     description = models.TextField(null=True, blank=False)
     allergens = models.ManyToManyField(Allergen)
     may_contain = models.ManyToManyField(Extra)
+    producer = models.ForeignKey(Producer, null=True)
 
 
 class Product(models.Model):

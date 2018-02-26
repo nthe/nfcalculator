@@ -6,7 +6,8 @@ django.setup()
 from nfcalculator.models import (Ingredient,
                                  IngredientNutritionFact,
                                  Allergen,
-                                 Extra
+                                 Extra,
+                                 Producer
                                  )
 
 
@@ -24,7 +25,7 @@ def load_products_from_file(file_name=None, sheet_name=None):
     return data_frame
 
 
-def add_to_ingredient(_name, _description, _allergen, _may_contain):
+def add_to_ingredient(_name, _description, _allergen, _may_contain, _producer):
     """
     <database models.py>
     ...
@@ -33,16 +34,17 @@ def add_to_ingredient(_name, _description, _allergen, _may_contain):
         description = models.TextField(null=True, blank=False)
         allergens = models.ManyToManyField(Allergen)
         may_contain = models.ManyToManyField(Extra)
+        producer = models.ForeignKey(Producer, null=True)
     ...
     </database models.py>
 
     :param _name:
     :param _description:
-    :param _allergen:      this is actual "excel cell" from column 'Alergény' when iterating
-                           through particular excel rows (pandas data_frame respectively)
-
+    :param _allergen:       this is actual "excel cell" from column 'Alergény' when iterating
+                            through particular excel rows (pandas data_frame respectively)
+    :param _may_contain:
+    :param _producer:
     :return:
-
     """
 
     allergen_set_object = set(str(_allergen).split(','))
@@ -64,9 +66,27 @@ def add_to_ingredient(_name, _description, _allergen, _may_contain):
     {'jačmeň', 'pšenica', 'vajce', 'horčica'}
     ...
     '''
+
+    # May on may not have Producer assigned/defined
+    try:
+        _producer = str(_producer).strip()
+        _producer = Producer.objects.get(name=_producer)
+        print("record: {}".format(_producer))
+
+    except Exception as pe:
+        print("_producer: {}".format(_producer))
+        print("Producer Error: {}".format(pe))
+        _producer = None
+
+    # description handling
+
+    if repr(_description) == 'nan':
+        _description = None
+
     ingredient = Ingredient.objects.get_or_create(
         name=_name,
-        description=_description
+        description=_description,
+        producer=_producer
     )[0]
 
     # Allergens section
@@ -121,6 +141,36 @@ def add_to_allergen(_allergen_list):
     return allergen
 
 
+def add_to_producer(_producer_list):
+    """
+    This function is supposed to be run just once
+    so I will call this function by hand in ypython
+    in the following fashion:
+
+    <code>
+    file = "data.xlsx"
+    sheet = "ingredient"
+    cwd = os.getcwd()
+    df = load_products_from_file(file, sheet)
+    column_names = df.columns.values.tolist()
+
+    df = pd.DataFrame(df)
+    producer_list = list(set([row['Výrobca/Distribútor'] for index, row in df.iterrows()]))[1:]
+    add_to_producer(producer_list)
+    </code>
+
+    :param _name:
+    :return:
+    """
+
+    for i in list(_producer_list):
+        producer = Producer.objects.get_or_create(
+            name=i
+        )[0]
+        producer.save()
+    return producer
+
+
 def add_to_extra(_extra_list):
     """
     This function is supposed to be run just once
@@ -156,7 +206,6 @@ def add_to_extra(_extra_list):
 def add_to_ingredientnutritionfact(_ingredient_id,
                                    _nutrition_fact_id,
                                    _weight):
-
     """
 
     :param ingredient_id:        for example butter - Liptov with      #5
@@ -256,11 +305,13 @@ Excel sheet data:
 
 for index, row in df.iterrows():
     # inserting to table: Ingredient
+    print('\n-----------------------------------------')
     print('processing: {}'.format(row['Názov produktu']))
     ingredient_object = add_to_ingredient(row['Názov produktu'],
                                           row['Zloženie'],
                                           row['Alergény'],
-                                          row['Môže obsahovať'])
+                                          row['Môže obsahovať'],
+                                          row['Výrobca/Distribútor'])
 
     Lipids = row['Tuky']
     Saturated = row['Z toho nasýtené mastné kyseliny']

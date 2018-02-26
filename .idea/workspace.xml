@@ -15,6 +15,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/populate/db.sqlite" afterPath="$PROJECT_DIR$/populate/db.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/populate/db.sqlite3" afterPath="$PROJECT_DIR$/populate/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/populate/tutorial.db" afterPath="$PROJECT_DIR$/populate/tutorial.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/populate/~$data.xlsx" afterPath="$PROJECT_DIR$/populate/~$data.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/ba07c63f-5808-44ea-920e-73746538f6b8.xml" />
@@ -58,7 +59,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/nfc$populate.coverage" NAME="populate Coverage Results" MODIFIED="1519588187963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/populate" />
+    <SUITE FILE_PATH="coverage/nfc$populate.coverage" NAME="populate Coverage Results" MODIFIED="1519638890715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/populate" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -92,6 +93,24 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.sqlite3" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="nfcalculator_producer" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -102,8 +121,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nfcalculator/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="36" selection-end-column="53" />
+            <state relative-caret-position="260">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -114,75 +133,108 @@
       <file leaf-file-name="populate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/populate/populate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="178" column="41" lean-forward="true" selection-start-line="178" selection-start-column="41" selection-end-line="178" selection-end-column="41" />
+            <state relative-caret-position="180">
+              <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#411#689#0" expanded="false" />
-                <element signature="e#2625#3390#0" expanded="false" />
-                <element signature="e#3428#4169#0" expanded="false" />
-                <element signature="e#5292#6012#1" expanded="false" />
+                <element signature="e#454#732#0" expanded="false" />
+                <element signature="e#819#1521#1" expanded="false" />
+                <element signature="e#1865#2061#1" expanded="false" />
+                <element signature="e#3264#4029#0" expanded="false" />
+                <element signature="e#4073#4755#0" expanded="false" />
+                <element signature="e#4793#5534#0" expanded="false" />
+                <element signature="e#6656#7376#1" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.nfcalculator_ingredient" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.nfcalculator_ingredient" pinned="false" current-in-tab="true">
         <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.nfcalculator_ingredient_allergens" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient_allergens">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.nfcalculator_ingredient_may_contain" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient_may_contain">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.nfcalculator_ingredientnutritionfact" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.nfcalculator_ingredientnutritionfact" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredientnutritionfact">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.nfcalculator_nutritionfact" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_nutritionfact">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.nfcalculator_producer" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_producer">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -217,9 +269,9 @@
         <option value="$PROJECT_DIR$/nfc/urls.py" />
         <option value="$PROJECT_DIR$/nfc/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/nfcalculator/models.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ba07c63f-5808-44ea-920e-73746538f6b8/console.sql" />
         <option value="$PROJECT_DIR$/nfc/settings.py" />
+        <option value="$PROJECT_DIR$/nfcalculator/models.py" />
         <option value="$PROJECT_DIR$/populate/populate.py" />
       </list>
     </option>
@@ -231,10 +283,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1056" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -252,8 +304,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -599,18 +651,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10897436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1098081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3263889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3961039" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1913646" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31224066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27056277" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20228216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20746888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.534632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -659,49 +711,42 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nfcalculator/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredientnutritionfact">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient_allergens">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -711,10 +756,13 @@
           <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#411#689#0" expanded="false" />
-            <element signature="e#2625#3390#0" expanded="false" />
-            <element signature="e#3428#4169#0" expanded="false" />
-            <element signature="e#5292#6012#1" expanded="false" />
+            <element signature="e#454#732#0" expanded="false" />
+            <element signature="e#819#1521#1" expanded="false" />
+            <element signature="e#1865#2061#1" expanded="false" />
+            <element signature="e#3264#4029#0" expanded="false" />
+            <element signature="e#4073#4755#0" expanded="false" />
+            <element signature="e#4793#5534#0" expanded="false" />
+            <element signature="e#6656#7376#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -752,40 +800,40 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_nutritionfact">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredientnutritionfact">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -802,10 +850,13 @@
           <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#411#689#0" expanded="false" />
-            <element signature="e#2625#3390#0" expanded="false" />
-            <element signature="e#3428#4169#0" expanded="false" />
-            <element signature="e#5292#6012#1" expanded="false" />
+            <element signature="e#454#732#0" expanded="false" />
+            <element signature="e#819#1521#1" expanded="false" />
+            <element signature="e#1865#2061#1" expanded="false" />
+            <element signature="e#3264#4029#0" expanded="false" />
+            <element signature="e#4073#4755#0" expanded="false" />
+            <element signature="e#4793#5534#0" expanded="false" />
+            <element signature="e#6656#7376#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1013,69 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen</OriginalElement>
-          <nodes>
-            <node x="650.5" y="-220.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain</node>
-            <node x="167.0" y="-195.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient</node>
-            <node x="266.0" y="386.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_nutritionfact</node>
-            <node x="255.0" y="50.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient</node>
-            <node x="827.5" y="-67.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_extra</node>
-            <node x="672.0" y="223.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact</node>
-            <node x="-87.0" y="128.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens</node>
-            <node x="-118.0" y="-178.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_product</node>
-            <node x="-101.0" y="406.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_product">
-              <point x="-98.0" y="0.0" />
-              <point x="71.0" y="0.0" />
-            </edge>
-            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_nutritionfact">
-              <point x="110.0" y="0.0" />
-              <point x="-83.0" y="0.0" />
-            </edge>
-            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
-              <point x="-113.5" y="0.0" />
-              <point x="77.0" y="0.0" />
-            </edge>
-            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen">
-              <point x="0.0" y="-48.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
-              <point x="0.0" y="-59.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_extra">
-              <point x="0.0" y="48.0" />
-              <point x="0.0" y="-37.0" />
-            </edge>
-            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
-              <point x="103.0" y="0.0" />
-              <point x="-77.0" y="0.0" />
-            </edge>
-            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
-              <point x="0.0" y="59.0" />
-              <point x="0.0" y="-48.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="100.0" y="183.0" />
-          <SelectedNodes>
-            <node>ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nfcalculator/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1090,10 +1078,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="uml://DATABASE/ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen</OriginalElement>
+          <nodes>
+            <node x="-131.5" y="112.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain</node>
+            <node x="236.0" y="-200.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient</node>
+            <node x="517.0" y="483.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_nutritionfact</node>
+            <node x="-57.5" y="-101.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_extra</node>
+            <node x="344.0" y="123.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient</node>
+            <node x="-6.0" y="434.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact</node>
+            <node x="807.0" y="61.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens</node>
+            <node x="624.0" y="-205.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_product</node>
+            <node x="834.0" y="343.0">ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_product">
+              <point x="98.0" y="0.0" />
+              <point x="-71.0" y="0.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_nutritionfact">
+              <point x="110.0" y="0.0" />
+              <point x="-83.0" y="0.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_productingredient" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+              <point x="0.0" y="59.0" />
+              <point x="0.0" y="-48.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_allergen">
+              <point x="0.0" y="48.0" />
+              <point x="0.0" y="-37.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+              <point x="113.5" y="0.0" />
+              <point x="-77.0" y="0.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_may_contain" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_extra">
+              <point x="0.0" y="-48.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient_allergens" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+              <point x="-103.0" y="0.0" />
+              <point x="77.0" y="0.0" />
+            </edge>
+            <edge source="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredientnutritionfact" target="ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient">
+              <point x="0.0" y="-59.0" />
+              <point x="0.0" y="48.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="60.0" y="-19.0" />
+          <SelectedNodes>
+            <node>ba07c63f-5808-44ea-920e-73746538f6b8.TABLE:main.nfcalculator_ingredient</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nfcalculator/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="36" selection-end-column="53" />
+        <state relative-caret-position="260">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -1101,120 +1151,136 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_allergen">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_extra">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_nutritionfact">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_product">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_extra">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/populate/populate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="178" column="41" lean-forward="true" selection-start-line="178" selection-start-column="41" selection-end-line="178" selection-end-column="41" />
+        <state relative-caret-position="180">
+          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#411#689#0" expanded="false" />
-            <element signature="e#2625#3390#0" expanded="false" />
-            <element signature="e#3428#4169#0" expanded="false" />
-            <element signature="e#5292#6012#1" expanded="false" />
+            <element signature="e#454#732#0" expanded="false" />
+            <element signature="e#819#1521#1" expanded="false" />
+            <element signature="e#1865#2061#1" expanded="false" />
+            <element signature="e#3264#4029#0" expanded="false" />
+            <element signature="e#4073#4755#0" expanded="false" />
+            <element signature="e#4793#5534#0" expanded="false" />
+            <element signature="e#6656#7376#1" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient_allergens">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient_may_contain">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredientnutritionfact">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_nutritionfact">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_producer">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4e5fd3ec/ba07c63f-5808-44ea-920e-73746538f6b8/main.nfcalculator_ingredient">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
